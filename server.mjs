@@ -1,6 +1,6 @@
 import express from 'express'
 const app = express()
-const app = process.env.PORT || 3000
+const port = process.env.PORT || 3000
 app.use((req, res, next =>{
     console.log("a request came", Date.now());
     next()
